@@ -30,6 +30,9 @@ const countMatches = function(items, ruleKey, ruleValue) {
     for (i=0; i<items.length; i++){
         if (items[i][keyIndex] === ruleValue) count++;
     } return count
+
+    // check if value in the array of arrays is our ruleValue at the index of the ruleValue input (ruleKeys is conveniently ordered for the indexOf method)
+   
 };
 
 console.log(countMatches([["phone","blue","pixel"],["computer","silver","lenovo"],["phone","gold","iphone"]], "color", "silver"));
