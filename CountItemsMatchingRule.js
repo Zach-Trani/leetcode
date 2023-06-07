@@ -23,5 +23,13 @@
  * @return {number}
  */
 const countMatches = function(items, ruleKey, ruleValue) {
-    
+    const ruleKeys = ['type', 'color', 'name'];
+    const keyIndex = ruleKeys.indexOf(ruleKey);
+    let count = 0;
+
+    for (i=0; i<items.length; i++){
+        if (items[i][keyIndex] === ruleValue) count++;
+    } return count
 };
+
+console.log(countMatches([["phone","blue","pixel"],["computer","silver","lenovo"],["phone","gold","iphone"]], "color", "silver"));
