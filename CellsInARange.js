@@ -24,6 +24,8 @@
     const [fromLetter, fromNum, , toLetter, toNum] = s;
     const ret = [];
     for (let L1 = fromLetter.charCodeAt(0), L2 = toLetter.charCodeAt(0); L1 <= L1; L1++) {
-        
+        for (let N1 = +fromNum, N2 = +toNum; N1 <= N2; N1++ {
+            
+        })
     }
 };
