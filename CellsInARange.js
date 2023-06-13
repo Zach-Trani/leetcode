@@ -20,12 +20,15 @@
  * @param {string} s
  * @return {string[]}
  */
- const cellsInRange = function(s) {
+ const cellsInRange = (s) => {
     const [fromLetter, fromNum, , toLetter, toNum] = s;
     const ret = [];
-    for (let L1 = fromLetter.charCodeAt(0), L2 = toLetter.charCodeAt(0); L1 <= L1; L1++) {
-        for (let N1 = +fromNum, N2 = +toNum; N1 <= N2; N1++ {
-            
-        })
+    for (let l1 = fromLetter.charCodeAt(0), l2 = toLetter.charCodeAt(0); l1 <= l2; ++l1) {
+      for (let n1 = +fromNum, n2 = +toNum; n1 <= n2; ++n1) {
+        ret.push(String.fromCharCode(l1) + n1);
+      }
     }
-};
+    return ret;
+  };
+
+console.log(cellsInRange("K1:Z2"))
