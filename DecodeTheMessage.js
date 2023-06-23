@@ -15,9 +15,11 @@
  */
  const decodeMessage = function(key, message) {
 
-    let filterSpace = key.replaceAll(' ', '');
-    let filterArr = filterSpace.split('');
-    return filterArr;
+    let replKey = key.replaceAll(' ', '');
+    let replMessage = message.replaceAll(' ', '');
+    let arrKey = replKey.split('');
+    let arrMessage = replMessage.split('')
+    
 };
 
  console.log(decodeMessage("the quick brown fox jumps over the lazy dog", "vkbs bs t suepuv"));
