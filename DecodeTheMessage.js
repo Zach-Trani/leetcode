@@ -18,7 +18,11 @@
     let replKey = key.replaceAll(' ', '');
     let replMessage = message.replaceAll(' ', '');
     let arrKey = replKey.split('');
-    let arrMessage = replMessage.split('')
+    let arrMessage = replMessage.split('');
+
+    for (i=0; i<arrMessage.length; i++){
+        let 
+    }
     
 };
 
