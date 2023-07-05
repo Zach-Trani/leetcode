@@ -5,6 +5,13 @@
 // The input string will only consist of lower case letters and/or spaces.
 
 
+
+/**
+ * Nest a for loop going through the vowels within a for loop going through the string and compare the two.
+ *
+ * @param {*} str
+ * @return {*} 
+ */
 function getCount(str) {
     let count = 0;
     const vowels = ['a', 'e', 'i', 'o', 'u'];
