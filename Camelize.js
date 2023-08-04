@@ -10,5 +10,6 @@ function camelize(str) {
         // converts ['my', 'long', 'word'] into ['my', 'Long', 'Word']
         (word, index) => index == 0 ? word : word[0].toUpperCase() + word.slice(1)
       )
+      .join(''); // joins ['my', 'Long', 'Word'] into 'myLongWord'
 }
 console.log(camelize("border-left-width"));
