@@ -2,6 +2,7 @@
 // https://javascript.info/array-methods
 
 function camelize(str) {
-    return 
+    return str
+    .split('-')
 }
 console.log(camelize("border-left-width"));
