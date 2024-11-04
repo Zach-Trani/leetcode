@@ -26,3 +26,4 @@ function twoSum(arr, sum){
 }
 
 console.log( twoSum([1,2,2,3,4], 4), '[[2,2],[3,1]]' )
+console.log(twoSum([1, 3, 5, 7], 10), '[[7,3]]')
