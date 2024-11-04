@@ -4,9 +4,9 @@
 // all pairs two numbers -> arr of pairs of arr
 
 function twoSum(arr, sum){
-
+    // pairs arr
     const pairs = []
-
+    // hash map obj
     const seenNums = {}
 
     for(const currentNum of arr){
