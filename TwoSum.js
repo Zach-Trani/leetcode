@@ -10,7 +10,7 @@ function twoSum(arr, sum){
     const seenNums = {}
 
     for(const currentNum of arr){
-        const diff = sum - currentNum 
+        const diff = sum - currentNum // diff is our other match num that we loop through to find
         if(seenNums[diff]){
 
             pairs.push([currentNum, diff])
